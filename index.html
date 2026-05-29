@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ansh Chawla Wellness - Personalized wellness coaching, nutrition guidance, and fitness transformation plans.">
+<meta name="keywords" content="Herbalife, wellness, diet plan, weight loss, weight gain, nutrition, India">
+<meta property="og:title" content="Ansh Chawla Wellness - Transform Your Health">
+<meta property="og:description" content="Join India's fastest growing wellness community for just ₹99/month">
+<title>Ansh Chawla Wellness | Transform Your Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">🌿</div>
+      Ansh Chawla Wellness
+    </a>
+    <div class="nav-links">
+      <a href="#benefits">Benefits</a>
+      <a href="#team">Team</a>
+      <a href="#diet">Diet Plan</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-btns">
+      <button class="btn btn-outline" onclick="openModal('login')">Sign In</button>
+      <button class="btn btn-primary" onclick="openModal('register')">Join ₹99/mo</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#benefits" onclick="closeMobileMenu()">Benefits</a>
+  <a href="#team" onclick="closeMobileMenu()">Team Roles</a>
+  <a href="#diet" onclick="closeMobileMenu()">Diet Plan</a>
+  <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+  <a href="#dashboard" onclick="closeMobileMenu()">Dashboard</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="#" onclick="openModal('register');closeMobileMenu();" style="color:var(--g1);font-weight:700">Join for ₹99/month →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="hero-dots"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="live-dot"></span>
+      India's #1 Herbalife Wellness Community
+    </div>
+    <h1 class="hero-title">
+      Transform Your Health With <em>Personalized</em> Herbal Nutrition
+    </h1>
+    <p class="hero-sub">Join India's fastest growing wellness community for just ₹99/month. Get AI-powered diet plans, expert Herbalife coaching, and a community that truly cares.</p>
+    <div class="hero-btns">
+      <button class="btn btn-primary btn-lg" onclick="openModal('register')">🚀 Join Now for ₹99</button>
+      <a href="#diet" class="btn btn-white btn-lg">📊 Get Your Diet Plan</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">12,000+</div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4.9 ★</div>
+        <div class="stat-label">Avg Rating</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">₹99</div>
+        <div class="stat-label">Per Month</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-cards">
+    <div class="hero-card">
+      <div class="hc-icon">⬇️</div>
+      <div class="hc-val">-12 kg</div>
+      <div class="hc-label">Priya lost in 3 months</div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-icon">💪</div>
+      <div class="hc-val">+7 kg</div>
+      <div class="hc-label">Rohit gained muscle</div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-icon">🎯</div>
+      <div class="hc-val">92%</div>
+      <div class="hc-label">Goal achievement rate</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-icon">🔒</span> Razorpay Secured</div>
+  <div class="trust-item"><span class="trust-icon">✅</span> Herbalife Verified</div>
+  <div class="trust-item"><span class="trust-icon">🇮🇳</span> Made in India</div>
+  <div class="trust-item"><span class="trust-icon">💬</span> WhatsApp Support</div>
+  <div class="trust-item"><span class="trust-icon">↩️</span> 7-Day Free Trial</div>
+</div>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Why Join Us</span>
+    <h2 class="section-title">Everything You Need to <span class="green">Thrive</span></h2>
+    <p class="section-sub center">One membership, unlimited wellness. Everything Herbalife and beyond — tailored just for you.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-card"><div class="bi">📊</div><div class="bt">Personalized Diet Charts</div><div class="bd">AI-powered meal plans tailored to your BMI, goals, and Herbalife product intake — updated monthly.</div></div>
+    <div class="benefit-card"><div class="bi">⬇️</div><div class="bt">Weight Loss Plans</div><div class="bd">Scientifically designed fat-loss programs with calorie deficit tracking and Herbalife Formula 1 shakes.</div></div>
+    <div class="benefit-card"><div class="bi">💪</div><div class="bt">Weight Gain Plans</div><div class="bd">Muscle-building nutrition plans with protein timing and Herbalife Protein Powder recommendations.</div></div>
+    <div class="benefit-card"><div class="bi">🧘</div><div class="bt">Wellness Coaching</div><div class="bd">1-on-1 sessions with certified wellness coaches and experienced Herbalife experts every week.</div></div>
+    <div class="benefit-card"><div class="bi">🌿</div><div class="bt">Product Guidance</div><div class="bd">Expert Herbalife product recommendations based on your health profile, budget, and goals.</div></div>
+    <div class="benefit-card"><div class="bi">👥</div><div class="bt">Community Support</div><div class="bd">Join an active WhatsApp community with daily motivation, recipes, and team challenges.</div></div>
+    <div class="benefit-card"><div class="bi">🏆</div><div class="bt">Team Training Sessions</div><div class="bd">Weekly live Zoom training for sponsors, associates, and wellness coaches to grow your business.</div></div>
+    <div class="benefit-card"><div class="bi">📈</div><div class="bt">Progress Tracking</div><div class="bd">Beautiful visual charts to track weight, BMI, water intake, and your overall wellness score.</div></div>
+    <div class="benefit-card"><div class="bi">💰</div><div class="bt">Referral Earnings</div><div class="bd">Earn ₹25–₹50 for every new member you refer to the Ansh Chawla Wellness community.</div></div>
+  </div>
+</section>
+
+<!-- TEAM ROLES -->
+<section id="team">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Our Team</span>
+    <h2 class="section-title">Find Your <span class="green">Role</span> in Our Community</h2>
+    <p class="section-sub center">From first-time members to world-class Herbalife sponsors — there is a place for everyone here.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#f59e0b,#d97706)">👑</div>
+      <div class="team-role">Tier 1 — Leadership</div>
+      <div class="team-name">Sponsor</div>
+      <div class="team-desc">Lead and mentor your downline team with exclusive training resources and business tools.</div>
+      <span class="badge b-gold">Gold Leader</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#0F9D58,#34A853)">⭐</div>
+      <div class="team-role">Tier 2 — Builder</div>
+      <div class="team-name">Associate</div>
+      <div class="team-desc">Build your client base and wellness business with our full coaching support and resources.</div>
+      <span class="badge b-green">Active Member</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">🚀</div>
+      <div class="team-role">Tier 3 — Achiever</div>
+      <div class="team-name">GET Team</div>
+      <div class="team-desc">Goal Earning Team — high-achievers unlocking advanced Herbalife income streams.</div>
+      <span class="badge b-blue">Elite Tier</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)">🌍</div>
+      <div class="team-role">Tier 4 — Elite</div>
+      <div class="team-name">World Team</div>
+      <div class="team-desc">Global Herbalife achievers with premium access to all programs, events, and recognition.</div>
+      <span class="badge b-purple">World Class</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#ec4899,#be185d)">💚</div>
+      <div class="team-role">Expert</div>
+      <div class="team-name">Wellness Coach</div>
+      <div class="team-desc">Certified nutrition and lifestyle coaches delivering personalized 1-on-1 wellness guidance.</div>
+      <span class="badge b-pink">Certified Pro</span>
+    </div>
+    <div class="team-card">
+      <div class="team-av" style="background:linear-gradient(135deg,#14b8a6,#0f766e)">😊</div>
+      <div class="team-role">Community</div>
+      <div class="team-name">Customer Member</div>
+      <div class="team-desc">Start your wellness journey with personalized diet plans and Herbalife product guidance.</div>
+      <span class="badge b-teal">Wellness First</span>
+    </div>
+  </div>
+</section>
+
+<!-- DIET CHART SECTION -->
+<section id="diet" style="background:linear-gradient(180deg,#fff,#f0fdf4)">
+  <div class="text-center" style="max-width:640px;margin:0 auto">
+    <span class="section-label">AI-Powered Nutrition</span>
+    <h2 class="section-title">Get Your <span class="green">Personalized Diet Plan</span></h2>
+    <p class="section-sub center">Answer 10 quick questions and receive a complete Herbalife-backed nutrition plan tailored specifically for your body and goals.</p>
+  </div>
+
+  <div class="form-container">
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span id="stepLabel">Step 1 of 10</span>
+        <span id="stepPct">10%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="pFill" style="width:10%"></div></div>
+    </div>
+    <div class="step-indicators" id="stepDots"></div>
+
+    <!-- Step 0: Gender -->
+    <div class="form-step active" id="s0">
+      <div class="step-title">What's your gender? 👤</div>
+      <div class="step-desc">We'll customize your nutrition and calorie targets based on your biology.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,0,'Male')"><span class="oi">👨</span>Male</div>
+        <div class="opt" onclick="pick(this,0,'Female')"><span class="oi">👩</span>Female</div>
+        <div class="opt" onclick="pick(this,0,'Other')"><span class="oi">🧑</span>Other / Prefer not to say</div>
+      </div>
+      <div class="form-nav"><div></div><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 1: Measurements -->
+    <div class="form-step" id="s1">
+      <div class="step-title">Your body measurements 📏</div>
+      <div class="step-desc">Used for accurate BMI calculation and personalized calorie targets.</div>
+      <div class="fi-row">
+        <div class="fi-wrap"><label>Age (years)</label><input class="fi" type="number" id="inAge" placeholder="e.g. 28" min="10" max="90"></div>
+        <div class="fi-wrap"><label>Height (cm)</label><input class="fi" type="number" id="inHeight" placeholder="e.g. 165" min="100" max="250"></div>
+      </div>
+      <div class="fi-wrap"><label>Current Weight (kg)</label><input class="fi" type="number" id="inWeight" placeholder="e.g. 70" min="30" max="300"></div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 2: Goal -->
+    <div class="form-step" id="s2">
+      <div class="step-title">Your health goal 🎯</div>
+      <div class="step-desc">We'll build your entire nutrition strategy and product plan around this.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,2,'Weight Loss')"><span class="oi">⬇️</span>Weight Loss<small>Burn fat, feel lighter</small></div>
+        <div class="opt" onclick="pick(this,2,'Weight Gain')"><span class="oi">💪</span>Weight Gain<small>Build healthy mass</small></div>
+        <div class="opt" onclick="pick(this,2,'Maintain Weight')"><span class="oi">⚖️</span>Maintain Weight<small>Stay healthy & fit</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 3: Activity -->
+    <div class="form-step" id="s3">
+      <div class="step-title">Your activity level 🏃</div>
+      <div class="step-desc">This determines your daily calorie needs (TDEE) for accurate planning.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,3,'Sedentary')"><span class="oi">🛋️</span>Sedentary<small>Desk job, no exercise</small></div>
+        <div class="opt" onclick="pick(this,3,'Light')"><span class="oi">🚶</span>Light Active<small>Walk 1–3 days/week</small></div>
+        <div class="opt" onclick="pick(this,3,'Moderate')"><span class="oi">🏃</span>Moderate<small>Exercise 3–5 days/week</small></div>
+        <div class="opt" onclick="pick(this,3,'Very Active')"><span class="oi">🏋️</span>Very Active<small>Intense 6–7 days/week</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 4: Diet Type -->
+    <div class="form-step" id="s4">
+      <div class="step-title">Your dietary preference 🥗</div>
+      <div class="step-desc">We'll tailor all Herbalife product recommendations to your food choices.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,4,'Vegetarian')"><span class="oi">🥦</span>Vegetarian<small>No meat / seafood</small></div>
+        <div class="opt" onclick="pick(this,4,'Non-Vegetarian')"><span class="oi">🍗</span>Non-Vegetarian<small>Includes meat & eggs</small></div>
+        <div class="opt" onclick="pick(this,4,'Vegan')"><span class="oi">🌱</span>Vegan<small>No animal products</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 5: Water -->
+    <div class="form-step" id="s5">
+      <div class="step-title">Daily water intake? 💧</div>
+      <div class="step-desc">Hydration is the foundation of any wellness transformation.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,5,'Under 1L')"><span class="oi">💧</span>Under 1 Litre<small>Very low intake</small></div>
+        <div class="opt" onclick="pick(this,5,'1-2L')"><span class="oi">🥤</span>1–2 Litres<small>Below recommended</small></div>
+        <div class="opt" onclick="pick(this,5,'2-3L')"><span class="oi">🫙</span>2–3 Litres<small>Good intake</small></div>
+        <div class="opt" onclick="pick(this,5,'3L+')"><span class="oi">🌊</span>3+ Litres<small>Excellent hydration</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 6: Sleep -->
+    <div class="form-step" id="s6">
+      <div class="step-title">How many hours do you sleep? 🌙</div>
+      <div class="step-desc">Sleep quality directly impacts metabolism, hormones, and fat loss.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,6,'Under 5h')"><span class="oi">😴</span>Under 5 hours<small>Sleep deprived</small></div>
+        <div class="opt" onclick="pick(this,6,'5-6h')"><span class="oi">🌙</span>5–6 hours<small>Slightly low</small></div>
+        <div class="opt" onclick="pick(this,6,'7-8h')"><span class="oi">✨</span>7–8 hours<small>Optimal range</small></div>
+        <div class="opt" onclick="pick(this,6,'9h+')"><span class="oi">🛏️</span>9+ hours<small>Extended sleep</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 7: Budget -->
+    <div class="form-step" id="s7">
+      <div class="step-title">Monthly nutrition budget 💰</div>
+      <div class="step-desc">We'll recommend the best Herbalife products within your comfortable range.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="pick(this,7,'Under 2000')"><span class="oi">💵</span>Under ₹2,000<small>Starter plan</small></div>
+        <div class="opt" onclick="pick(this,7,'2000-5000')"><span class="oi">💴</span>₹2,000–5,000<small>Essential plan</small></div>
+        <div class="opt" onclick="pick(this,7,'5000-10000')"><span class="oi">💶</span>₹5,000–10,000<small>Premium plan</small></div>
+        <div class="opt" onclick="pick(this,7,'10000+')"><span class="oi">💰</span>₹10,000+<small>Full elite plan</small></div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 8: Health Conditions -->
+    <div class="form-step" id="s8">
+      <div class="step-title">Any health conditions? 🏥</div>
+      <div class="step-desc">Select all that apply. This ensures your plan is safe and appropriate for you.</div>
+      <div class="mcq-grid">
+        <div class="opt" onclick="toggle(this,8,'None')"><span class="oi">✅</span>None</div>
+        <div class="opt" onclick="toggle(this,8,'Diabetes')"><span class="oi">🩸</span>Diabetes<small>Type 1 or 2</small></div>
+        <div class="opt" onclick="toggle(this,8,'Thyroid')"><span class="oi">🦋</span>Thyroid<small>Hypo / Hyper</small></div>
+        <div class="opt" onclick="toggle(this,8,'PCOS')"><span class="oi">🌸</span>PCOS / PCOD</div>
+        <div class="opt" onclick="toggle(this,8,'BP')"><span class="oi">❤️</span>Blood Pressure</div>
+        <div class="opt" onclick="toggle(this,8,'Joints')"><span class="oi">🦴</span>Joint Pain</div>
+      </div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="goNext()">Next →</button></div>
+    </div>
+
+    <!-- Step 9: Personal Info -->
+    <div class="form-step" id="s9">
+      <div class="step-title">Almost there! 🎉</div>
+      <div class="step-desc">Enter your details to receive your personalized plan and we'll send it on WhatsApp too.</div>
+      <div class="fi-wrap"><label>Your Full Name</label><input class="fi" type="text" id="inName" placeholder="e.g. Ansh Chawla"></div>
+      <div class="fi-wrap"><label>WhatsApp Number</label><input class="fi" type="tel" id="inPhone" placeholder="+91 98765 43210"></div>
+      <div class="fi-wrap"><label>Email Address (Optional)</label><input class="fi" type="email" id="inEmail" placeholder="your@email.com"></div>
+      <div class="form-nav"><button class="btn-ghost" onclick="goPrev()">← Back</button><button class="btn-gen" onclick="generate()">🌿 Generate My Plan</button></div>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result-area" id="resultArea">
+      <div class="result-head">
+        <div class="result-head-icon">🎉</div>
+        <div class="result-title" id="rTitle">Your Personalized Wellness Plan</div>
+        <div class="result-sub" id="rSub">AI-generated based on your profile • Herbalife-powered nutrition</div>
+      </div>
+      <div class="metrics-grid" id="rMetrics"></div>
+      <div id="rPlan"></div>
+      <div class="result-cta">
+        <button class="btn btn-primary btn-lg" onclick="openModal('register')" style="width:100%;max-width:400px">🚀 Join for ₹99 to Unlock Your Full Plan</button>
+        <p>Includes monthly plan updates, coaching sessions & community access</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Membership</span>
+    <h2 class="section-title">One Plan. <span class="green">Everything Included.</span></h2>
+    <p class="section-sub center">No hidden fees. No long contracts. Pure wellness transformation at ₹99/month.</p>
+  </div>
+  <div class="pricing-wrap">
+    <div class="price-card">
+      <div class="price-name">Free Trial</div>
+      <div class="price-amount" style="color:var(--muted)">₹0</div>
+      <div class="price-period">for 7 days</div>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-check">✓</div>Basic Diet Plan</div>
+        <div class="feat-item"><div class="feat-check">✓</div>BMI Calculator</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Community Access</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>Personalized Coaching</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>Herbalife Guidance</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>Team Training</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>Referral Earnings</div>
+      </div>
+      <button class="btn btn-outline" style="width:100%" onclick="openModal('register')">Start Free Trial</button>
+    </div>
+
+    <div class="price-card featured">
+      <div class="feat-badge">⭐ MOST POPULAR</div>
+      <div class="price-name">Wellness Monthly</div>
+      <div class="price-amount">₹99</div>
+      <div class="price-period">per month • cancel anytime</div>
+      <div class="trial-badge">🎁 Start with 7 days completely FREE</div>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-check">✓</div>AI Personalized Diet Plan</div>
+        <div class="feat-item"><div class="feat-check">✓</div>BMI & Calorie Tracker</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Herbalife Product Guidance</div>
+        <div class="feat-item"><div class="feat-check">✓</div>WhatsApp Community Access</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Weekly Live Coaching Sessions</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Weight & Wellness Tracker</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Team Training Resources</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Referral Earnings (₹25–50)</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Priority Coach Support</div>
+      </div>
+      <button class="btn btn-primary" style="width:100%;padding:14px" onclick="openModal('register')">Start Your Wellness Journey 🌿</button>
+      <div class="payment-note">🔒 Razorpay secured • UPI • Cards • Netbanking</div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-name">Annual Plan</div>
+      <div class="price-amount">₹799</div>
+      <div class="price-period">per year (save ₹389)</div>
+      <div class="trial-badge" style="background:#f0fdf4;border-color:#d1fae5">💰 Save 33% vs monthly</div>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-check">✓</div>Everything in Monthly</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Quarterly Plan Reviews</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Priority WhatsApp Support</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Exclusive Annual Events</div>
+        <div class="feat-item"><div class="feat-check">✓</div>Higher Referral Bonus</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>1-on-1 Monthly Call</div>
+        <div class="feat-item muted"><div class="feat-x">✕</div>Custom Product Bundle</div>
+      </div>
+      <button class="btn btn-outline" style="width:100%" onclick="openModal('register')">Get Annual Plan</button>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD PREVIEW -->
+<section id="dashboard">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Member Dashboard</span>
+    <h2 class="section-title">Track Your <span class="green">Wellness Journey</span></h2>
+    <p class="section-sub center">Your personal command center for health. Live data, beautiful charts, and real progress tracking.</p>
+  </div>
+  <div class="dash-wrap">
+    <div class="dash-topbar">
+      <div class="dash-user">
+        <div class="dash-avatar">AK</div>
+        <div>
+          <div class="dash-username">Ansh Chawla</div>
+          <div class="dash-role">Associate Member • Sec 65 Ballabgarh Faridabad</div>
+        </div>
+      </div>
+      <div class="dash-badges">
+        <span class="d-badge d-badge-green">✓ Active Member</span>
+        <span class="d-badge d-badge-gold">Day 42 🔥</span>
+      </div>
+    </div>
+    <div class="dash-nav">
+      <button class="dash-tab active" onclick="showDash(this,'overview')">📊 Overview</button>
+      <button class="dash-tab" onclick="showDash(this,'weight')">⚖️ Weight</button>
+      <button class="dash-tab" onclick="showDash(this,'water')">💧 Water</button>
+      <button class="dash-tab" onclick="showDash(this,'meals')">🥗 Meals</button>
+      <button class="dash-tab" onclick="showDash(this,'referral')">💰 Referrals</button>
+    </div>
+    <div class="dash-body">
+
+      <!-- Overview Panel -->
+      <div class="dash-panel active" id="dp-overview">
+        <div class="stat-row">
+          <div class="stat-card"><div class="sc-val">72.4 kg</div><div class="sc-lbl">Current Weight</div><div class="sc-change">↓ 0.3 kg this week</div></div>
+          <div class="stat-card"><div class="sc-val">22.8</div><div class="sc-lbl">BMI Score</div><div class="sc-change">Normal range ✓</div></div>
+          <div class="stat-card"><div class="sc-val">8.2/10</div><div class="sc-lbl">Wellness Score</div><div class="sc-change">↑ 0.4 this week</div></div>
+          <div class="stat-card"><div class="sc-val">1,850</div><div class="sc-lbl">Cal Today</div><div class="sc-change">Target: 2,100</div></div>
+        </div>
+        <div class="rings-row">
+          <div class="ring-item">
+            <svg width="88" height="88" class="ring-svg" viewBox="0 0 88 88"><circle class="ring-bg" cx="44" cy="44" r="36"></circle><circle class="ring-fg" cx="44" cy="44" r="36" stroke="#0F9D58" stroke-dasharray="226" stroke-dashoffset="56"></circle><text x="44" y="49" text-anchor="middle" class="ring-center" style="fill:#1a2332;font-size:14px;font-weight:800;font-family:Montserrat">75%</text></svg>
+            <div class="ring-lbl">Goal Progress</div>
+          </div>
+          <div class="ring-item">
+            <svg width="88" height="88" class="ring-svg" viewBox="0 0 88 88"><circle class="ring-bg" cx="44" cy="44" r="36"></circle><circle class="ring-fg" cx="44" cy="44" r="36" stroke="#34A853" stroke-dasharray="226" stroke-dashoffset="90"></circle><text x="44" y="49" text-anchor="middle" class="ring-center" style="fill:#1a2332;font-size:14px;font-weight:800;font-family:Montserrat">60%</text></svg>
+            <div class="ring-lbl">Hydration</div>
+          </div>
+          <div class="ring-item">
+            <svg width="88" height="88" class="ring-svg" viewBox="0 0 88 88"><circle class="ring-bg" cx="44" cy="44" r="36"></circle><circle class="ring-fg" cx="44" cy="44" r="36" stroke="#4ade80" stroke-dasharray="226" stroke-dashoffset="45"></circle><text x="44" y="49" text-anchor="middle" class="ring-center" style="fill:#1a2332;font-size:14px;font-weight:800;font-family:Montserrat">80%</text></svg>
+            <div class="ring-lbl">Nutrition</div>
+          </div>
+          <div class="ring-item">
+            <svg width="88" height="88" class="ring-svg" viewBox="0 0 88 88"><circle class="ring-bg" cx="44" cy="44" r="36"></circle><circle class="ring-fg" cx="44" cy="44" r="36" stroke="#0F9D58" stroke-dasharray="226" stroke-dashoffset="113"></circle><text x="44" y="49" text-anchor="middle" class="ring-center" style="fill:#1a2332;font-size:14px;font-weight:800;font-family:Montserrat">50%</text></svg>
+            <div class="ring-lbl">Exercise</div>
+          </div>
+        </div>
+        <div style="font-weight:700;font-size:.9rem;color:var(--text);margin-bottom:14px">📅 Recent Activity</div>
+        <div class="activity-list">
+          <div class="act-item"><div class="act-dot">🥤</div><div><div class="act-title">Drank 2.5L water — great hydration!</div><div class="act-time">Today, 2:30 PM</div></div></div>
+          <div class="act-item"><div class="act-dot">🏃</div><div><div class="act-title">Completed 30 min morning walk</div><div class="act-time">Today, 7:00 AM</div></div></div>
+          <div class="act-item"><div class="act-dot">🥗</div><div><div class="act-title">Logged Herbalife Formula 1 shake (breakfast)</div><div class="act-time">Yesterday, 8:15 AM</div></div></div>
+          <div class="act-item"><div class="act-dot">⚖️</div><div><div class="act-title">Weight logged: 72.4 kg (down 0.3 kg this week)</div><div class="act-time">Yesterday, 6:30 AM</div></div></div>
+        </div>
+      </div>
+
+      <!-- Weight Tracker Panel -->
+      <div class="dash-panel" id="dp-weight">
+        <div class="chart-title">Weight Progress — Last 8 Weeks <span class="chart-subtitle">Total: −3.2 kg 🎉</span></div>
+        <div class="bar-chart" id="weightBars"></div>
+        <div style="display:flex;justify-content:space-around;padding:0 12px;margin-top:4px">
+          <span style="font-size:.65rem;color:var(--muted)">W1</span><span style="font-size:.65rem;color:var(--muted)">W2</span><span style="font-size:.65rem;color:var(--muted)">W3</span><span style="font-size:.65rem;color:var(--muted)">W4</span><span style="font-size:.65rem;color:var(--muted)">W5</span><span style="font-size:.65rem;color:var(--muted)">W6</span><span style="font-size:.65rem;color:var(--muted)">W7</span><span style="font-size:.65rem;color:var(--muted)">W8</span>
+        </div>
+        <div style="margin-top:18px;background:#f0fdf4;border-radius:14px;padding:18px;font-size:.85rem;color:var(--text);border:1px solid #d1fae5">
+          📊 <strong>Progress Summary:</strong> Lost <strong style="color:var(--g1)">3.2 kg</strong> in 8 weeks. BMI reduced from <strong>24.6 → 22.8</strong>. You're on track to reach your goal weight in approximately <strong style="color:var(--g1)">6 more weeks!</strong>
+        </div>
+      </div>
+
+      <!-- Water Tracker Panel -->
+      <div class="dash-panel" id="dp-water">
+        <div class="water-section">
+          <div class="water-title">💧 Today's Hydration — <span id="waterCount">6</span> / 10 glasses</div>
+          <div class="water-sub">Each glass = 250ml • Daily goal: 2.5 Litres</div>
+          <div class="glasses-grid" id="glassGrid"></div>
+          <div class="water-progress"><div class="water-prog-fill" id="waterBar" style="width:60%"></div></div>
+          <div style="display:flex;gap:10px;margin-bottom:16px">
+            <button class="btn btn-primary" style="font-size:.8rem;padding:10px 18px" onclick="addGlass()">+ Add Glass (250ml)</button>
+            <button class="btn btn-outline" style="font-size:.8rem;padding:10px 18px" onclick="removeGlass()">− Remove</button>
+          </div>
+          <div class="water-note">💡 <strong>Herbalife Tip:</strong> Mix 2 tsp Herbal Aloe Concentrate in your morning water — boosts gut health and nutrient absorption!</div>
+        </div>
+      </div>
+
+      <!-- Meal Planner Panel -->
+      <div class="dash-panel" id="dp-meals">
+        <div style="font-weight:700;font-size:.92rem;color:var(--text);margin-bottom:18px">🥗 Today's Personalized Meal Plan</div>
+        <div class="meal-day">
+          <div class="meal-item"><div class="meal-time">6:30 AM — Morning Start</div><div class="meal-name">Warm Water + Lemon + Herbal Aloe</div><div class="meal-desc">2 tsp Herbal Aloe Concentrate in warm water • Kickstarts digestion</div></div>
+          <div class="meal-item"><div class="meal-time">8:00 AM — Breakfast</div><div class="meal-name">Herbalife Formula 1 Shake (Vanilla)</div><div class="meal-desc">2 scoops + Personalized Protein Powder + low-fat milk • ~420 kcal</div></div>
+          <div class="meal-item"><div class="meal-time">10:30 AM — Mid-Morning Snack</div><div class="meal-name">Seasonal Fruit + Almonds</div><div class="meal-desc">1 apple/banana + 10–12 almonds • ~180 kcal</div></div>
+          <div class="meal-item"><div class="meal-time">1:00 PM — Lunch</div><div class="meal-name">Balanced Indian Meal</div><div class="meal-desc">2 chapati + dal + sabzi + salad + 1 bowl curd • ~550 kcal</div></div>
+          <div class="meal-item"><div class="meal-time">4:00 PM — Evening</div><div class="meal-name">Herbalife Herbal Tea + Light Snack</div><div class="meal-desc">1 cup Herbal Tea + roasted chana or makhana • ~150 kcal</div></div>
+          <div class="meal-item"><div class="meal-time">7:30 PM — Dinner</div><div class="meal-name">Herbalife Formula 1 Shake (Chocolate)</div><div class="meal-desc">2 scoops + light vegetable soup on the side • ~400 kcal</div></div>
+        </div>
+      </div>
+
+      <!-- Referral Panel -->
+      <div class="dash-panel" id="dp-referral">
+        <div style="font-weight:700;font-size:.92rem;color:var(--text);margin-bottom:18px">💰 Your Referral Earnings</div>
+        <div class="ref-grid">
+          <div class="ref-stat"><div class="ref-val">7</div><div class="ref-lbl">Total Referrals</div></div>
+          <div class="ref-stat"><div class="ref-val">₹350</div><div class="ref-lbl">Total Earned</div></div>
+          <div class="ref-stat"><div class="ref-val">3</div><div class="ref-lbl">This Month</div></div>
+        </div>
+        <div class="ref-link-box">
+          <div class="ref-link-title">Your Unique Referral Link</div>
+          <div class="ref-link-row">
+            <div class="ref-link-val">https://anshwellness.club/ref/ANSH2024</div>
+            <button class="btn btn-primary" style="font-size:.78rem;padding:9px 18px;white-space:nowrap" onclick="this.textContent='Copied! ✓'">Copy Link</button>
+          </div>
+          <div style="margin-top:14px;font-size:.8rem;color:var(--muted)">Share your link and earn ₹25–50 for every member who joins and pays their first month.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Success Stories</span>
+    <h2 class="section-title">Real Members. <span class="green">Real Results.</span></h2>
+    <p class="section-sub center">Join 12,000+ members who've transformed their health with Ansh Chawla Wellness.</p>
+  </div>
+  <div class="test-grid">
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"Lost 12 kg in just 3 months with the personalized diet plan and Herbalife guidance. The community support kept me motivated every single day. Best ₹99 I've ever spent!"</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#0F9D58,#34A853)">PR</div><div><div class="t-name">Priya Rathore</div><div class="t-role">Sec 65 Ballabgarh Faridabad • Associate Member</div><span class="t-tag">-12 kg in 3 months</span></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"As a Herbalife Sponsor, this platform helped me onboard 15 new team members in just 2 months. The training resources and community support are absolutely world-class!"</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#f59e0b,#d97706)">RS</div><div><div class="t-name">Rajesh Sharma</div><div class="t-role">Mumbai • Gold Sponsor</div><span class="t-tag">+15 team members</span></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"Gained 7 kg of healthy muscle in 4 months! The protein timing advice combined with Herbalife products is just incredible. My coach was available whenever I needed help."</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">AK</div><div><div class="t-name">Amit Kumar</div><div class="t-role">Bengaluru • GET Team</div><span class="t-tag">+7 kg muscle gain</span></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"Managing PCOS weight gain was a struggle for 3 years. After joining Ansh Chawla Wellness, I finally have a plan that works. Down 8 kg and my hormones are balanced!"</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#ec4899,#be185d)">SM</div><div><div class="t-name">Sneha Mehta</div><div class="t-role">Pune • Customer Member</div><span class="t-tag">-8 kg with PCOS</span></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"I was skeptical about ₹99/month but the value is unbelievable. Diet plan, coaching, product guidance, and a WhatsApp community that feels like family. Highly recommended!"</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9)">VK</div><div><div class="t-name">Vikram Kumar</div><div class="t-role">Jaipur • World Team</div><span class="t-tag">-6 kg in 2 months</span></div></div>
+    </div>
+    <div class="test-card">
+      <div class="stars">★★★★★</div>
+      <div class="test-text">"Joined as a Wellness Coach and the platform has completely transformed my practice. I can now serve 3x more clients with the tools and resources provided here."</div>
+      <div class="test-author"><div class="t-av" style="background:linear-gradient(135deg,#14b8a6,#0f766e)">ND</div><div><div class="t-name">Neha Dubey</div><div class="t-role">Hyderabad • Wellness Coach</div><span class="t-tag">3x more clients</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <span class="cta-label">⏰ Limited Time — Join Now</span>
+    <div class="cta-title">Start Your Transformation for Just ₹99/month</div>
+    <div class="cta-sub">7-day free trial • Cancel anytime • Instant access to all features • Razorpay secured</div>
+    <div class="cta-btns">
+      <button class="btn btn-white btn-lg" onclick="openModal('register')">🚀 Join Ansh Chawla Wellness</button>
+      <a href="#diet" class="btn btn-dark btn-lg">📊 Get Free Diet Plan First</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Help Center</span>
+    <h2 class="section-title">Frequently Asked <span class="green">Questions</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Is Ansh Chawla Wellness officially affiliated with Herbalife? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Ansh Chawla Wellness is an independent community platform built by and for Herbalife distributors and members. We provide tools, education, diet planning, and community support to help Herbalife members achieve their wellness goals more effectively.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Can I cancel my ₹99 membership anytime? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes, absolutely. You can cancel your ₹99/month membership at any time with no questions asked and no cancellation fees. Your access continues until the end of your current billing period.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">How does the AI diet plan generation work? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Our system uses your BMI, health goals, activity level, dietary preference, sleep patterns, and budget to calculate your TDEE (Total Daily Energy Expenditure) and create a fully personalized meal plan with Herbalife product recommendations — updated every month.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">How much can I earn through referrals? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">For every member you refer who joins and pays their first month's membership, you earn ₹25–₹50. There is no limit to how many people you can refer. Earnings are tracked in your dashboard and can be withdrawn or used toward future membership fees.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">How do I join as a Sponsor or World Team member? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">After signing up, select your Herbalife role during the onboarding flow. Admin verification is required for Sponsor-tier and above, which typically takes 24–48 business hours. You'll receive a WhatsApp notification once approved.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Is my payment information safe? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes. All payments are processed securely through Razorpay — India's most trusted payment gateway. We accept UPI, credit/debit cards, net banking, and wallets. We never store your card details on our servers.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Can I get a refund if I'm not satisfied? <span class="faq-arr">▼</span></button>
+      <div class="faq-a"><div class="faq-a-inner">We offer a 7-day free trial so you can experience everything risk-free. If you subscribe and are unhappy within the first 7 days of your first paid month, contact us and we'll process a full refund — no questions asked.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="text-center" style="max-width:600px;margin:0 auto">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">We're Here to <span class="green">Help You</span></h2>
+    <p class="section-sub center">Have questions about membership, team joining, or your wellness journey? Our coaches respond within hours.</p>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <p style="font-size:.92rem;color:var(--muted);line-height:1.75;margin-bottom:24px">Whether you're a new member, an existing Herbalife distributor, or just curious about the platform — we'd love to hear from you.</p>
+      <div class="contact-info-list">
+        <div class="ci-item"><div class="ci-icon">📱</div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val">+91 98765 43210</div></div></div>
+        <div class="ci-item"><div class="ci-icon">📧</div><div><div class="ci-lbl">Email</div><div class="ci-val">hello@anshwellness.club</div></div></div>
+        <div class="ci-item"><div class="ci-icon">📍</div><div><div class="ci-lbl">Location</div><div class="ci-val">Gurugram, Haryana, India</div></div></div>
+        <div class="ci-item"><div class="ci-icon">⏰</div><div><div class="ci-lbl">Support Hours</div><div class="ci-val">9:00 AM – 9:00 PM, 7 days a week</div></div></div>
+      </div>
+    </div>
+    <div class="contact-form-box">
+      <div class="cf-title">Send Us a Message 💬</div>
+      <input class="cf-inp" type="text" placeholder="Your Full Name">
+      <input class="cf-inp" type="tel" placeholder="WhatsApp Number">
+      <input class="cf-inp" type="email" placeholder="Email Address">
+      <select class="cf-inp">
+        <option>I want to join as a member</option>
+        <option>I'm a Herbalife Sponsor looking to list</option>
+        <option>I need my diet plan</option>
+        <option>Partnership / collaboration inquiry</option>
+        <option>Technical support</option>
+        <option>Other</option>
+      </select>
+      <textarea class="cf-inp" placeholder="Your message... How can we help you?"></textarea>
+      <button class="btn btn-primary" style="width:100%;padding:14px;font-size:.9rem" onclick="this.textContent='Message Sent! ✓ We will reply within 2 hours';this.style.background='#1a7a43'">Send Message 🌿</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a class="footer-brand-logo" href="#">
+        <div class="logo-icon" style="background:linear-gradient(135deg,#34A853,#4ade80)">🌿</div>
+        Ansh Chawla Wellness
+      </a>
+      <p class="footer-desc">India's fastest growing Herbalife wellness community. Personalized nutrition, expert coaching, and team building for just ₹99/month.</p>
+      <div class="footer-trust">
+        <span class="ft-item">✅ Trusted by 12,000+ members across India</span>
+        <span class="ft-item">🔒 Secured by Razorpay</span>
+        <span class="ft-item">🇮🇳 Proudly Made in India</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Platform</h5>
+      <a href="#diet">Diet Plan Generator</a>
+      <a href="#dashboard">Member Dashboard</a>
+      <a href="#pricing">Membership Plans</a>
+      <a href="#team">Team Roles</a>
+      <a href="#">Admin Panel</a>
+    </div>
+    <div class="footer-col">
+      <h5>Community</h5>
+      <a href="#">WhatsApp Group</a>
+      <a href="#">Live Coaching Sessions</a>
+      <a href="#">Team Training</a>
+      <a href="#">Success Stories</a>
+      <a href="#">Referral Program</a>
+    </div>
+    <div class="footer-col">
+      <h5>Support</h5>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Refund Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2024 Ansh Chawla Wellness. Made with 💚 in India.</div>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Refunds</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-btn" href="https://wa.me/919876543210?text=Hi%20Ansh%20Wellness%20Club!%20I%20want%20to%20join%20for%20%E2%82%9999/month%20%F0%9F%8C%BF" target="_blank" rel="noopener">
+  💬
+  <div class="wa-tooltip">Chat with us on WhatsApp!</div>
+</a>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal" onclick="outsideClose(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-logo">
+      <div class="logo-icon" style="width:30px;height:30px;font-size:.9rem;border-radius:8px">🌿</div>
+      Ansh Chawla Wellness
+    </div>
+    <div class="modal-title" id="mTitle">Join Ansh Chawla Wellness</div>
+    <div class="modal-sub" id="mSub">Start your wellness journey for ₹99/month</div>
+    <div class="modal-tabs" id="mTabs">
+      <button class="m-tab active" onclick="mSwitch(this,'reg')">Create Account</button>
+      <button class="m-tab" onclick="mSwitch(this,'login')">Sign In</button>
+    </div>
+
+    <div id="regForm">
+      <button class="social-login">🟢 &nbsp;Continue with Google</button>
+      <div class="or-div">or register with email</div>
+      <input class="m-inp" type="text" placeholder="Full Name">
+      <input class="m-inp" type="tel" placeholder="WhatsApp Number">
+      <input class="m-inp" type="email" placeholder="Email Address">
+      <input class="m-inp" type="password" placeholder="Create a Password">
+      <select class="m-inp">
+        <option>I am a Customer Member</option>
+        <option>I am a Wellness Coach</option>
+        <option>I am an Associate</option>
+        <option>I am a GET Team Member</option>
+        <option>I am a World Team Member</option>
+        <option>I am a Sponsor</option>
+      </select>
+      <button class="btn btn-primary" style="width:100%;padding:13px;font-size:.88rem;margin-top:4px">🚀 Start 7-Day Free Trial</button>
+      <div class="m-note">Then ₹99/month • Cancel anytime • 🔒 Razorpay secured</div>
+    </div>
+
+    <div id="loginForm" style="display:none">
+      <button class="social-login">🟢 &nbsp;Continue with Google</button>
+      <div class="or-div">or sign in with email</div>
+      <input class="m-inp" type="email" placeholder="Email Address">
+      <input class="m-inp" type="password" placeholder="Your Password">
+      <button class="btn btn-primary" style="width:100%;padding:13px;font-size:.88rem;margin-top:4px">🌿 Sign In to Dashboard</button>
+      <div class="m-note"><span class="m-link">Forgot password?</span></div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
